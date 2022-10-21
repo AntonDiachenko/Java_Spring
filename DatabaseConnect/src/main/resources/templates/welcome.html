@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+<h1><span th:text="'Welcome: ' + ${name}"></span> </h1>
+
+    <form action="#" th:action="@{/register}" th:object="${userData}" method="post">
+        
+          <button type="submit">Logout</button>
+          
+    </form>
+
+
+
+
+<!--  
+
+    <h3><span th:text="'your name is: ' + ${name}"></span></h3>
+    <h3><span th:text="'Your email is: ' + ${email}"></span></h3>
+    <h3><span th:text="'Your password is ' + ${password}"></span></h3>    
+    <h3><span th:text="'Your cellphone is ' + ${cellphone}"></span></h3>    
+    <h3><span th:text="'Your birthday is ' + ${birthday}"></span></h3>   
+    <h3><span th:text="'Your profession is: ' + ${profession}"></span></h3>
+    <h3><span th:text="'your income is: ' + ${income}"></span></h3>
+
+-->
+
+
+<!--  
+    <h3>Your name is ${name}</h3>
+    <h3>Your profession is ${profession}</h3>
+    <h3>Your age is ${age}</h3>
+    <h3>Your Student ID is ${StudentID}</h3>
+    <h3>Your password is ${password}</h3>
+-->
+    
+</body>
+</html>

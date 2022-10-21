@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>List Users</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container text-center">
+    <div>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out" />
+        </form>
+    </div>
+    <div>
+        <h1>List of Products</h1>
+        <a href="/new">Create New Product</a>
+    </div>
+     
+    <div>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Product Specs</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="product: ${listProducts}">
+                    <td th:text="${product.id}">Product ID</td>
+                    <td th:text="${product.name}">Product Name</td>
+					<td th:text="${product.specs}">Product Specs</td>
+                    <td>
+                    <a th:href="@{'/editproduct/' + ${product.id}}">Edit</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a th:href="@{'/deleteproduct/' + ${product.id}}">Delete</a>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

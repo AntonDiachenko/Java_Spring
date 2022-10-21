@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration form</title>
+<style type="text/css">
+    span {
+    color: red;
+    font-style: italic;
+    }
+</style>
+</head>
+<body>
+	<h1>REGISTRATION FORM</h1>
+    <form action="#" th:action="@{/registration-successful}" th:object="${userData}" method="post">
+        <table>
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" th:field="*{name}" /></td>
+                <td><span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name
+                    Error</span></td>
+            </tr>
+
+           <tr>
+                <td>Email:</td>
+                <td><input type="email" th:field="*{email}" /></td>
+                <td><span th:if="${#fields.hasErrors('email')}"
+                    th:errors="*{email}">Email Error</span></td>
+            </tr>
+            
+            
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" th:field="*{password}" /></td>
+                <td><span th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password
+                    error</span></td>
+            </tr>            
+
+           <tr>
+                <td>Birthday:</td>
+                <td><input type="text" placeholder="yyyy-mm-dd" th:field="*{birthday}" /></td>
+                <td><span th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}">Birthday
+                    Error</span></td>
+            </tr>
+
+           <tr>
+                <td>Cellphone:</td>
+                <td><input type="text" th:field="*{cellphone}" /></td>
+                <td><span th:if="${#fields.hasErrors('cellphone')}"
+                    th:errors="*{cellphone}">Cellphone Error</span></td>
+            </tr>
+            
+            <tr>
+                <td>Profession:</td>
+                <td><input type="text" th:field="*{profession}" /></td>
+                <td><span th:if="${#fields.hasErrors('profession')}" th:errors="*{profession}">Profession
+                    Error</span></td>
+            </tr>
+            
+            <tr>
+                <td>Income:</td>
+                <td><input type="text" th:field="*{income}" /></td>
+                <td><span th:if="${#fields.hasErrors('income')}" th:errors="*{income}">Income
+                    Error</span></td>
+            </tr>
+
+
+           <tr>
+                <td><button type="submit">Register</button></td>
+           </tr>
+
+
+
+       </table>
+    </form>
+
+
+
+</body>
+</html>
