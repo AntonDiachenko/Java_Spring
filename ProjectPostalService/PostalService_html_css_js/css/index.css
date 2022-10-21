@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+.my-container {
+    width: 70rem;
+    margin: 0, auto;
+    padding: 0;
+    border: 5px solid rgb(115, 166, 74);
+    background-color: rgb(213, 255, 179); 
+}
+
+.my-header {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link:hover {
+    color: rgb(124, 151, 102); 
+    font-size: larger;
+}
+
+.nav-link {
+    color: rgb(52, 75, 33);
+}
+
+.active {
+    color: rgb(124, 151, 102); 
+}
+
+.logo {
+    margin: 0;
+    padding:0;
+    background-color: white;
+}
+
+
+.my-nav {
+    padding: 1rem;
+    background-color: white;
+}
+
+.sign-up-form {
+    margin: 0;
+    padding: 2rem;
+    border-top: 5px solid rgb(115, 166, 74);
+}
+
+.form-control, .col-auto {
+    margin: 0;
+}
+
+.order-form-container, 
+.show-customer-by-id,
+.show-customer-by-name,
+.show-all-customers,
+.show-employees-by-branch,
+.show-update-delete-employee-by-id,
+.show-orders-by-customer,
+.show-orders-by-shiptype { 
+    margin: 1rem 10rem 1rem 10rem;
+    padding: 1rem;
+    background-color: rgb(115, 166, 74);
+    border: 5px solid rgb(218, 250, 81);
+    border-style: groove;
+}
+
+.employee-registration-form {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.table,
+.table-container {
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#orders-by-customer-here,
+#orders-by-shiptype-here {
+    text-align: left;
+    font-size: 14px;
+}
+
+.show-all-customers p,
+.show-employees-by-branch p,
+.show-orders-by-cust-p,
+.show-orders-by-shiptype-p {
+    background-color: white;
+}
+
+.order-form {
+    margin: 1rem 5rem;
+}
+
+.post-button-container{
+    text-align: center;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+
+}
+
+.get-button-container {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.copyright-container {
+    padding: 2rem;
+    justify-content: center;
+}
+
+.btn-primary {
+    color: black;
+    background-color: rgb(218, 250, 81);
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: rgb(69, 94, 48);
+}
+

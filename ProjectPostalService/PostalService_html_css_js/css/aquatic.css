@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+.section-1 {
+    margin: 0;
+    
+    padding: 2rem 1rem 2rem 1rem;
+   
+}
+
+.aquatic-background {
+
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/background_2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.explore-aquatic {
+    margin: 6rem 0 6rem 0;
+    padding: 1rem 0 1rem 0;
+}
+
+.explore-aquatic h1 {
+    letter-spacing: 1rem;
+    line-height: 1.5;
+    font-size: 8vw;
+    color:white;
+    text-shadow: 3px 3px rgb(105, 114, 122);
+}
+
+#logo-favicon {
+    width: 10vw;
+
+}
+
+#logo-favicon:hover {
+    transition: 2s;
+    transform: rotateY(180deg);
+    
+}
+
+.section-1 {
+    background-image: linear-gradient(to bottom, rgb(94, 163, 228),  rgb(62, 91, 119));
+}
+
+.section1-left-divs {
+    margin: 0;
+    padding: 0;
+}
+
+.section1-left-div1, .section1-left-div2 {
+    
+    margin: 0 1rem 0 1rem;
+    padding: 0 1rem 1rem 1rem;
+   
+    color: white;
+}
+
+.section1-left-divs h1 {
+    text-align: center;
+}
+
+.section-1 h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: white;
+}
+
+.our-pool1 {
+    width: 60%;
+    height: 60%;
+    float: left;
+    margin: 10px 10px 0 0;
+}
+
+.our-pool2 {
+    width: 60%;
+    height: 60%;
+    float: right;
+    margin: 10px 0 0px 10px;
+}
+
+.news {
+    margin: 0;
+    text-align: center;
+    border: 2px double rgb(68, 21, 21);
+    color: white;
+}
+
+.news h1 {
+    margin-bottom: 1rem;
+    
+}
+
+.news h5 {
+    color: rgb(68, 21, 21);
+    text-align: left;
+}
+
+.news p {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+
+.section-2 {
+    text-align: center;
+    height: auto;
+    margin: 0;
+    padding: 2rem;
+    background-image: linear-gradient(to bottom, rgb(204, 91, 91), rgb(128, 21, 21), rgb(204, 91, 91));
+}
+
+.programs-columns {
+    margin: 0;
+    padding: 1rem;
+}
+
+.programs-img {
+    width: 75%;
+    margin-top: 1rem;
+}
+
+.programs-columns h4{
+    color: white;
+}
+
